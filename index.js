@@ -39,8 +39,8 @@ function createBot() {
       console.log('Server requested login. Sending password...');
       
       // Replace 'YourSecretPassword123' with the actual password for the bot
-      bot.chat('/login YourSecretPassword123'); 
-      bot.chat('/register YourSecretPassword123 YourSecretPassword123');
+      bot.chat('/login microsoft'); 
+      bot.chat('/register microsoft microsoft');
     }
     console.log('Bot spawned in the world!');
     bot.chat('Hello! I am hosted on Render.');
