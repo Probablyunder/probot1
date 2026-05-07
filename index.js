@@ -17,7 +17,7 @@ server.listen(PORT, () => {
 
 // --- SECTION 2: THE MINEFLAYER BOT ---
 const botArgs = {
-  host: 'TDSCSurvival.aternos.me', // Change this to your server IP
+  host: 'driftfish.aternos.host', // Change this to your server IP
   port: 52619,                  // Change this if your server uses a different port
   username: 'TDSC',        // The name of your bot
   // auth: 'microsoft'          // Uncomment this if joining a premium/Microsoft server
