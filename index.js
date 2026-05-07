@@ -30,21 +30,11 @@ function createBot() {
 
   // When the bot joins the game
   bot.on('spawn', () => {
-     // --- SECTION 4: AUTO-AUTH ---
-  bot.on('message', (jsonMsg) => {
-    const message = jsonMsg.toString();
+  console.log('Bot spawned in the world!');
     
     // Check if the server is asking the bot to register or login
     if (message.includes('/login') || message.includes('/register')) {
-      console.log('Server requested login. Sending password...');
-      
-      // Replace 'YourSecretPassword123' with the actual password for the bot
-      bot.chat('/login microsoft'); 
-      bot.chat('/register microsoft microsoft');
-    }
-    console.log('Bot spawned in the world!');
-    bot.chat('Hello! I am hosted on Render.');
-  });
+      console.log('Server requested login. Sending password...')
 
   // Basic chat response (Optional)
   bot.on('chat', (username, message) => {
