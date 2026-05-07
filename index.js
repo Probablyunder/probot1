@@ -17,12 +17,9 @@ server.listen(PORT, () => {
 
 // --- SECTION 2: THE MINEFLAYER BOT ---
 const botArgs = {
-  host: 'driftfish.aternos.host', // Change this to your server IP
+  host: 'TDSCSurvival.aternos.me', // Change this to your server IP
   port: 52619,                  // Change this if your server uses a different port
-  username: 'TDSC',  
-    connectTimeout: 60000,         // <--- ADD THIS LINE (don't forget the comma!)
-  version: '1.21.11'              // <--- Also add your Minecraft version here
-};                              // The name of your bot
+  username: 'TDSC',        // The name of your bot
   // auth: 'microsoft'          // Uncomment this if joining a premium/Microsoft server
 };
 
@@ -33,11 +30,9 @@ function createBot() {
 
   // When the bot joins the game
   bot.on('spawn', () => {
-  console.log('Bot spawned in the world!');
-    
-    // Check if the server is asking the bot to register or login
-    if (message.includes('/login') || message.includes('/register')) {
-      console.log('Server requested login. Sending password...')
+    console.log('Bot spawned in the world!');
+    bot.chat('Hello! I am hosted on Render.');
+  });
 
   // Basic chat response (Optional)
   bot.on('chat', (username, message) => {
